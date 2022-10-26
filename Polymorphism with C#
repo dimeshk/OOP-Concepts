@@ -1,0 +1,46 @@
+//Compile Time Polymorphism Example
+
+class Program {
+void print(int i, int j) {
+Console.WriteLine("Printing int: {0}", (i+j) );
+}
+void print(string a, string b) {
+Console.WriteLine("Printing String: " , (a+b));
+}
+       
+static void Main(string[] args) {
+Program prog = new Program();
+          
+// Call print for sum of integers
+prog.print(5, 6);
+          
+// Call to concatenate strings
+prog.print("Hello","World");
+Console.ReadKey();
+}
+}
+
+
+//Runtime Polymorphism Example
+
+class Program
+ {
+public void print()
+         {
+               Console.WriteLine("Printing from class Program");
+          }
+ }
+class Execute : Program
+ {
+public void print()
+         {
+                 Console.WriteLine("Printing from class Execute");
+         }
+         
+public static void Main(string[] args)
+                {
+                        Execute exe = new Execute();
+                         exe.print();
+                        Console.ReadLine();
+                }
+  }
