@@ -1,0 +1,17 @@
+class Program
+       {
+public void print()
+             {
+                Console.WriteLine("Printing from class Program");
+              }
+       }
+               class Execute : Program
+      {      
+        
+public static void Main(string[] args)
+               {
+                       Execute exe = new Execute();
+                       exe.print();
+                       Console.ReadLine();
+                }
+}
