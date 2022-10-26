@@ -1,0 +1,24 @@
+class Program
+{
+           static void Main(string[] args)
+           {
+                Hyundai hyn = new Hyundai();
+                String descp = hyn.Describe();
+                Console.WriteLine(descp);
+                Console.ReadKey();
+            }
+ }
+abstract class Car
+{
+              public virtual string Describe()
+              {
+                      return "Description of the car";
+               }
+   }
+class Hyundai : Car
+{
+         public override string Describe()
+         {
+                 return "Description of the car is now Hyundai";
+          }
+ }
