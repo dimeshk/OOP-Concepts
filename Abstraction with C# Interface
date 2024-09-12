@@ -1,0 +1,22 @@
+class Program
+{
+           static void Main(string[] args)
+          {
+                 Hyundai hyn = new Hyundai();
+                 String descp = hyn.Describe();
+                 Console.WriteLine(descp);
+                 Console.ReadKey();
+            }
+}
+interface Car
+ {
+       string Describe();
+              
+  }
+class Hyundai : Car
+  {
+         public string Describe()
+         {
+                return "Description of the car is now Hyundai";
+           }
+  }
